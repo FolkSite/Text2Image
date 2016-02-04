@@ -1,5 +1,9 @@
 Changelog for Text2Image.
 
+1.0.1-beta
+==============
+- English localization.
+
 1.0.0-beta
 ==============
 - Initial release.
