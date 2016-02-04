@@ -48,4 +48,4 @@ You can upload your own fonts, for this purpose you need to specify the path to 
 * **trp** — The background transparent.
 * **format** — The image format (png,gif,jpeg).
 * **tpl** — The chunk to use for each row of image..
-* **toPlaceholder** —If set, will output the content to the placeholder specified in this property, rather than outputting the content directly.
+* **toPlaceholder** — If set, will output the content to the placeholder specified in this property, rather than outputting the content directly.
