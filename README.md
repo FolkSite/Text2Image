@@ -37,15 +37,15 @@ You can upload your own fonts, for this purpose you need to specify the path to 
 
 ##Parameters list
 
-***w** — Ширина изображения.
-***h** — Высота изображения.
-***fontSize** — Размер шрифта в пунктах (pt).
-***fontFile** — Файл со шрифтом в формате TrueType (.ttf).
-***angle** — Угол наклона текста на изображение.
-***padding** — Отступ вокруг текста на изображение.
-***bg** — Цвет фона в режиме HEX (#fff).
-***color** — Цвета текста в режиме HEX (#000).
-***trp** — Прозрачность фона.
-***format** — Формат изображения (png,gif,jpeg).
-***tpl** — Чанк оформления каждого изображения.
-***toPlaceholder** — Если указан этот параметр, то результат будет сохранен в плейсхолдер, вместо прямого вывода на странице.
+***w** — The image width
+***h** — The image height.
+***fontSize** — The font size in points (pt).
+***fontFile** — The path to the TrueType font you wish to use (.ttf).
+***angle** — The angle in degrees, with 0 degrees being left-to-right reading text. Higher values represent a counter-clockwise rotation. For example, a value of 90 would result in bottom-to-top reading text.
+***padding** — The Padding for text on image.
+***bg** — The background color in HEX (#fff).
+***color** — The font color in HEX (#000).
+***trp** — The background transparent.
+***format** — The image format (png,gif,jpeg).
+***tpl** — The chunk to use for each row of image..
+***toPlaceholder** —If set, will output the content to the placeholder specified in this property, rather than outputting the content directly.
