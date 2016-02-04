@@ -5,6 +5,7 @@
 Вызов сниппета:
 <pre>[[text2image?text=`Hello world!`]]</pre>
 По умолчанию будет сгенерировано .png изображение с прозрачным фоном в виде base64 кода.
+
 <img src="https://file.modx.pro/files/0/5/d/05dcbf23b7b635485cc035883c9c2d5c.png" />
 
 
