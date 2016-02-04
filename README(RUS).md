@@ -8,14 +8,14 @@
 ```
 По умолчанию будет сгенерировано .png изображение с прозрачным фоном в виде base64 кода.
 
-![text2image Hello world](https://file.modx.pro/files/0/5/d/05dcbf23b7b635485cc035883c9c2d5c.png)
+![text2image Пример: Hello world!](https://file.modx.pro/files/0/5/d/05dcbf23b7b635485cc035883c9c2d5c.png)
 
 Генерация плэйсхолдера(изображения-заглушки, не путать с modx плэйсхолдерами):
 
 ```
 [[text2image?&w=`100`&h=`100`]]
 ```
-![text2image Hello world](https://file.modx.pro/files/9/3/1/9310fc072b7af00b019452d8a8ad3128.png)
+![text2image Пример: Плэйсхолдер изображения 100x100](https://file.modx.pro/files/9/3/1/9310fc072b7af00b019452d8a8ad3128.png)
 
 Вы можете задать для текста цвет, шрифт, размер, угол поворота, отступ, цвет фона и формат изображения через параметры. 
 Вызов сниппета с различными параметрами:
@@ -30,7 +30,7 @@
 ]]
 ```
 
-![text2image different parameters](https://file.modx.pro/files/b/e/e/beedc32578b5e64b1e1582283a348a07.png)
+![text2image Пример вызова с различными параметрами](https://file.modx.pro/files/b/e/e/beedc32578b5e64b1e1582283a348a07.png)
 
 Вы можете загрузить свои шрифты для генерации, для этого нужно указать путь до шрифта использую плэйсхолдер <b>[[++assets_path]]</b>. Либо закинуть шрифты в директорию компонента: /assets/components/text2image/fonts, тогда путь должен быть, как на примере выше с использованием плэйсхолдера <b>[[+assetsPath]]</b>.
 
