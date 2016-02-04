@@ -9,14 +9,14 @@ Call snippet:
 ```
 By default generates a simple PNG image with transparent background in base64 encoding.
 
-![text2image Hello World! Example](https://file.modx.pro/files/0/5/d/05dcbf23b7b635485cc035883c9c2d5c.png)
+![text2image Example: Hello World!](https://file.modx.pro/files/0/5/d/05dcbf23b7b635485cc035883c9c2d5c.png)
 
 Generates a placeholder image 100x100 pixels:
 
 ```
 [[text2image?&w=`100`&h=`100`]]
 ```
-![text2image Placeholder Example](https://file.modx.pro/files/9/3/1/9310fc072b7af00b019452d8a8ad3128.png)
+![text2image Example: Placeholder 100x100](https://file.modx.pro/files/9/3/1/9310fc072b7af00b019452d8a8ad3128.png)
 
 You can specify the text color, font, size, angle, space, background color and image size in snippet parameters.
 Snippet call with different parameters:
