@@ -7,6 +7,10 @@ $tmp = array(
 		'file' => 'text2image',
 		'description' => '',
 	),
+	'DummyImage' => array(
+		'file' => 'dummyimage',
+		'description' => '',
+	),
 );
 
 foreach ($tmp as $k => $v) {

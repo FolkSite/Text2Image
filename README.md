@@ -5,23 +5,23 @@ Also you can make image placeholder, like placehold.it service.
 
 Call snippet:
 ```
-[[text2image?text=`Hello World!`]]
+[[!Text2Image?text=`Hello World!`]]
 ```
 By default generates a simple PNG image with transparent background in base64 encoding.
 
-![text2image Example: Hello World!](https://file.modx.pro/files/0/5/d/05dcbf23b7b635485cc035883c9c2d5c.png)
+![Text2Image Example: Hello World!](https://file.modx.pro/files/0/5/d/05dcbf23b7b635485cc035883c9c2d5c.png)
 
 Generates a placeholder image 100x100 pixels:
 
 ```
-[[text2image?&w=`100`&h=`100`]]
+<img src="[[!DummyImage?size=`300x150`]]" alt="300x150" />
 ```
-![text2image Example: Placeholder 100x100](https://file.modx.pro/files/9/3/1/9310fc072b7af00b019452d8a8ad3128.png)
+![Text2Image Example: Placeholder 100x100](https://file.modx.pro/files/9/3/1/9310fc072b7af00b019452d8a8ad3128.png)
 
 You can specify the text color, font, size, angle, space, background color and image size in snippet parameters.
 Snippet call with different parameters:
 ```
-[[text2image?
+[[!Text2Image?
     &text=`Text2Image`
     &color=`#FFD700`
     &bg=`#000`
@@ -31,7 +31,7 @@ Snippet call with different parameters:
 ]]
 ```
 
-![text2image Example with different parameters](https://file.modx.pro/files/b/e/e/beedc32578b5e64b1e1582283a348a07.png)
+![Text2Image Example with different parameters](https://file.modx.pro/files/b/e/e/beedc32578b5e64b1e1582283a348a07.png)
 
 You can upload your own fonts, for this purpose you need to specify the path to the font, using `[[++assets_path]]` placeholder . Or put your font to the component fonts directory: /assets/components/text2image/fonts, then the path should be, as in the example above using the placeholder `[[+assetsPath]]`.
 

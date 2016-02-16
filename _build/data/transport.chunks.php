@@ -4,7 +4,11 @@ $chunks = array();
 
 $tmp = array(
 	'tpl.Text2Image.item' => array(
-		'file' => 'item',
+		'file' => 'text2image.item',
+		'description' => '',
+	),
+	'tpl.DummyImage.item' => array(
+		'file' => 'dummyimage.item',
 		'description' => '',
 	),
 );

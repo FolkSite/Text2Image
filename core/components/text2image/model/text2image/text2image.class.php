@@ -63,6 +63,21 @@ class Text2Image
         return $this->ImageGenerator->generateImage();
     }
 
+    public function getProportions($size) {
+        if (preg_match('/(\d+)x(\d+)/', $size, $proportions))
+            $output = array('width' => $proportions['1'], 'height' => $proportions['2']);
+        else
+            $output = false;
+        return $output;
+    }
+
+    public function getWidth() {
+        return $this->ImageGenerator->width;
+    }
+
+    public function getHeight() {
+        return $this->ImageGenerator->height;
+    }
 
     /**
      * Method for transform array to placeholders

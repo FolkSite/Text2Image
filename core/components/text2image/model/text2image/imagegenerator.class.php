@@ -9,6 +9,8 @@ class ImageGenerator
     public $modx;
     public $config = array();
     public $supportedFormats = array();
+    public $width;
+    public $height;
 
     function __construct($modx, $config) {
         $this->modx = $modx;
@@ -44,12 +46,12 @@ class ImageGenerator
 
         $bBox = $this->_calculateTextBox($text, $fontFile, $fontSize, $angle);
 
-        $width = $width ?: $bBox["width"] + $padding;
-        $height = $height ?: $bBox["height"] + $padding;
+        $this->width = $width ?: $bBox["width"] + $padding;
+        $this->height = $height ?: $bBox["height"] + $padding;
 
-        $x = $bBox["left"] + ($width / 2) - ($bBox["width"] / 2);
-        $y = $bBox["top"] + ($height / 2) - ($bBox["height"] / 2);
-        $im = imagecreate($width, $height);
+        $x = $bBox["left"] + ($this->width / 2) - ($bBox["width"] / 2);
+        $y = $bBox["top"] + ($this->height / 2) - ($bBox["height"] / 2);
+        $im = imagecreate($this->width, $this->height);
 
         $bgColor = imagecolorallocate($im, $bg['red'], $bg['green'], $bg['blue']);
 

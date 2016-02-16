@@ -6,18 +6,19 @@ if (!$Text2Image = $modx->getService('text2image', 'Text2Image', $modx->getOptio
     return 'Could not load Text2Image class!';
 }
 
-$width = $scriptProperties['w'] = $modx->getOption('w', $scriptProperties);
-$height = $scriptProperties['h'] = $modx->getOption('h', $scriptProperties);
-$size = (isset($width, $height)) ? $width . 'x' . $height : '';
+if (!($size && $proportions = $Text2Image->getProportions($size))) {
+    return '';
+}
 
-if (!isset($text, $bg))
-    $scriptProperties['bg'] = '#ccc';
+$width = $scriptProperties['w'] = $proportions['width'];
+$height = $scriptProperties['h'] = $proportions['height'];
 
-if ($scriptProperties['bg'])
-    $scriptProperties['trp'] = false;
-
-$scriptProperties['bg'] = $modx->getOption('bg', $scriptProperties, '#fff', true);
+$scriptProperties['bg'] = $modx->getOption('bg', $scriptProperties);
+$scriptProperties['trp'] = $modx->getOption('trp', $scriptProperties);
 $scriptProperties['text'] = $modx->getOption('text', $scriptProperties, $size, true);
+
+if ($scriptProperties['trp'])
+    $scriptProperties['bg'] = "#fff";
 
 if (!$scriptProperties['text']) return '';
 
@@ -35,7 +36,6 @@ if ($image = $Text2Image->generateImage()) {
         'height' => $Text2Image->getHeight(),
     ));
 }
-
 if (!empty($toPlaceholder)) {
     $modx->setPlaceholder($toPlaceholder, $output);
 

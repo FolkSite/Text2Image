@@ -1,5 +1,10 @@
 Changelog for Text2Image.
 
+1.0.2-beta
+==============
+- Add separate snippet for images-placeholders generation: [[!DummyImage?size=`200x100`]].
+- Add placeholders [[+width]] and [[+height]] for Text2Image's and DummyImage's tpl.chunks.
+
 1.0.1-beta
 ==============
 - English localization.
