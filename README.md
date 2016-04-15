@@ -14,7 +14,7 @@ By default generates a simple PNG image with transparent background in base64 en
 Generates a placeholder image 100x100 pixels:
 
 ```
-<img src="[[!DummyImage?size=`300x150`]]" alt="300x150" />
+<img src="[[!DummyImage?size=`100x100`]]" alt="100x100" />
 ```
 ![Text2Image Example: Placeholder 100x100](https://file.modx.pro/files/9/3/1/9310fc072b7af00b019452d8a8ad3128.png)
 
