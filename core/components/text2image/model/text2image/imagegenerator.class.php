@@ -27,6 +27,7 @@ class ImageGenerator
         $fontFile = $this->config['fontFile'];
         $angle = $this->config['angle'];
         $padding = $this->config['padding'];
+        $break = $this->config['break'];
         $color = $this->_hex2RGB($this->config['color']);
         $bg = $this->_hex2RGB($this->config['bg']);
         $trp = $this->config['trp'];
@@ -35,6 +36,7 @@ class ImageGenerator
         $height = $this->config['h'];
         $text = $this->config['text'];
 
+
         if (!in_array($format, $this->supportedFormats)) {
             $this->modx->log(modX::LOG_LEVEL_ERROR, "[Text2Image]: Unsupported format. Select supported one(" . implode(', ', $this->supportedFormats) . ").");
             return false;
@@ -42,6 +44,10 @@ class ImageGenerator
         if (!is_file($this->config['fontFile'])) {
             $this->modx->log(modX::LOG_LEVEL_ERROR, "[Text2Image]: Font file not found at following path: '{$this->config['fontFile']}'.");
             return false;
+        }
+
+        if ($break) {
+            $text = wordwrap($text, $break);
         }
 
         $bBox = $this->_calculateTextBox($text, $fontFile, $fontSize, $angle);

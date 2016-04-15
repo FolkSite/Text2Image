@@ -37,15 +37,16 @@ You can upload your own fonts, for this purpose you need to specify the path to 
 
 ##Parameters list
 
-* **w** — The image width
-* **h** — The image height.
-* **fontSize** — The font size in points (pt).
-* **fontFile** — The path to the TrueType font you wish to use (.ttf).
 * **angle** — The angle in degrees, with 0 degrees being left-to-right reading text. Higher values represent a counter-clockwise rotation. For example, a value of 90 would result in bottom-to-top reading text.
-* **padding** — The Padding for text on image.
 * **bg** — The background color in HEX (#fff).
+* **break** — Wraps a string to a given number of characters.
 * **color** — The font color in HEX (#000).
-* **trp** — The background transparent.
+* **fontFile** — The path to the TrueType font you wish to use (.ttf).
+* **fontSize** — The font size in points (pt).
 * **format** — The image format (png,gif,jpeg).
-* **tpl** — The chunk to use for each row of image..
+* **h** — The image height.
+* **padding** — The Padding for text on image.
 * **toPlaceholder** — If set, will output the content to the placeholder specified in this property, rather than outputting the content directly.
+* **tpl** — The chunk to use for each row of image..
+* **trp** — The background transparent.
+* **w** — The image width

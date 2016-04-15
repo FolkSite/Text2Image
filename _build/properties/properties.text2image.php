@@ -27,6 +27,10 @@ $tmp = array(
         'type' => 'textfield',
         'value' => '',
     ),
+    'break' => array(
+        'type' => 'numberfield',
+        'value' => 250,
+    ),
     'trp' => array(
         'type' => 'combo-boolean',
         'value' => true,

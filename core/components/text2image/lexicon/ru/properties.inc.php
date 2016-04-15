@@ -4,6 +4,7 @@ $_lang['text2image_prop_fontFile'] = 'Файл со шрифтом в форма
 $_lang['text2image_prop_angle'] = 'Угол наклона текста на изображение.';
 $_lang['text2image_prop_padding'] = 'Отступ вокруг текста на изображение.';
 $_lang['text2image_prop_bg'] = 'Цвет фона в режиме HEX (#fff).';
+$_lang['text2image_prop_break'] = 'Перенос строки по указанному количеству символов.';
 $_lang['text2image_prop_color'] = 'Цвета текста в режиме HEX (#000).';
 $_lang['text2image_prop_trp'] = 'Прозрачность фона.';
 $_lang['text2image_prop_format'] = 'Формат изображения (png,gif,jpeg).';
